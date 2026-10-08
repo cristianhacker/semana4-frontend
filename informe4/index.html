@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="slider.css">
+    <script src="jquery/jquery-3.7.1.js"></script>
+    <script src="jquery/jquery.slides.js"></script>
+    <script>
+         $(function(){
+           $(".slides").slidesjs({
+             width: 400,
+             height: 140,
+             
+             play: {
+                 active: true,
+                     // [boolean] Generate the play and stop buttons.
+                     // You cannot use your own buttons. Sorry.
+                 effect: "fade",
+                     // [string] Can be either "slide" or "fade".
+                 interval: 3000,
+                     // [number] Time spent on each slide in milliseconds.
+                 auto: true,
+                     // [boolean] Start playing the slideshow on load.
+                 swap: true,
+                     // [boolean] show/hide stop and play buttons
+                 pauseOnHover: true,
+                     // [boolean] pause a playing slideshow on hover
+                 restartDelay: 2000
+                     // [number] restart delay on inactive slideshow
+             }
+           });
+         });
+</script>
+    <title>informe4</title>
+</head>
+<body>
+    <main>
+    <header>
+        <div class="logo">
+            <img src="img/logo3.png" alt="cargando">
+        </div>
+        <div >
+            <h1>XXXTENTACION</h1>
+        </div>
+    </header>
+    <div class="clear"></div>
+    <nav class="menu">
+        <ul>
+            <li>Sección 1</li>
+            <li>Sección 2</li>
+            <li>Sección 3</li>
+            <li>Sección 4</li>
+        </ul>
+    </nav>
+     <div class="slides" style="overflow: hidden;">
+            <img src="img/1.jpg" alt="cargando">
+            <img src="img/2.jpg" alt="cargando">
+            <img src="img/3.jpg" alt="cargando">
+            <img src="img/4.jpg" alt="cargando">
+            
+            
+        </div>
+    
+    <div class="medio">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/GX8Hg6kWQYI?si=SjoJHhtGorMV17J7?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <article>
+        <h2>Your life</h2>
+        <p>
+            XXXTENTACION (cuyo nombre real era Jahseh Dwayne Ricardo Onfroy) fue un influyente y controvertido rapero, cantante y compositor estadounidense, reconocido como una de las figuras musicales más importantes del SoundCloud rap y el emo rap de finales de la década de 2010.
+Falleció el 18 de junio de 2018 a los 20 años de edad, tras ser víctima de un tiroteo durante un asalto a la salida de un concesionario de motocicletas en Deerfield Beach, Florida.
+        </p>
+    </article>
+
+    </div>  
+    <div class="clear"></div>
+    <div class="medio2">
+        <img src="img/xp.jpg">
+    
+    <section class="formulario">
+    <form method="POST" id="formulario">
+        
+
+        <h2 >Regístrate</h2>
+        <p id="mensaje"></p>
+        <div class="entrada">
+            <img src="scv/user.png" alt="" >
+            <input type="text" name="nombre" id="nombre" placeholder="Nombres" required>
+        </div>
+        <div class="entrada">
+            <img src="scv/user.png" alt="" >
+            <input type="text" name="apellido" id="apellido" placeholder="Apellidos" required>
+        </div>
+
+        <div class="entrada">
+            <img src="scv/sobre.png" alt="" srcset="">
+            <input type="email" name="correo" id="correo" placeholder="Correo electrónico" required>
+        </div>
+        <div class="entrada">
+            <img src="scv/clave.png" alt="" srcset="">
+            <input type="password" name="clave" id="clave" placeholder="Contraseña" required>
+        </div>
+        
+     
+        <p>
+            <button id="btnEnviar" class="grabar" type="submit">Enviar</button>
+        </p>
+    </form>
+    </section>
+    </div>
+    <footer>
+        <div class="datosFooter" >
+            <p>(c)2026 Cristian Chunga</p>
+            <p><a href="mailto:1739368@senati.pe" target="_blank">1739368@senati.pe</a></p>
+            <p><a href="https://github.com/cristianhacker/"  target="_blank">github.com/cristianhacker</a></p>
+        </div>
+        <div class="iconos">
+            <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr#" target="_blank">
+                <img src="scv/facebook-svgrepo-com.svg">
+            </a>
+            <a href="https://x.com/?lang=es">
+                <img src="scv/twitter-svgrepo-com.svg" alt="cargando">
+            </a>
+            <a href="https://pe.linkedin.com/" target="_blank">
+                <img src="scv/linkedin-svgrepo-com.svg" alt="cargando" >
+            </a>
+        </div>
+    </footer>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

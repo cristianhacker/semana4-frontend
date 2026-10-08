@@ -1,0 +1,340 @@
+
+body{
+    margin:0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/edificios\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+main{
+    width: 100%;
+    max-width: 1100px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin:0;
+    padding-top: 0;
+    background-color: azure;
+font-family: sans-serif;}
+header {
+    display:flex;
+    justify-content:  space-between;
+    height: 75px;
+background-color: black;}
+header, .slides{
+    margin-bottom: 0;
+}   
+h1{
+    background-color: black;
+    color:azure;
+    padding-right: 50px;
+    font-family: "font3";
+    font-size: 2em;
+}
+/* Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* hr{height: 2px;margin:5px;
+color:azure} */
+.clear{margin:0px;height: 1px;
+color:azure}
+.menu{
+    
+    height: 50px;
+    background-color: black;
+    
+}
+.menu ul{
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    list-style: none;
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    
+}
+.menu ul li{
+    color:azure;
+    background-color: black;
+    line-height: 48px;
+    height: 50px;
+    font-family:"font1";
+    font-size: 1.5em; 
+    text-align: center;
+    flex: 1;
+    transition: 0.5 ease;
+
+}
+
+.menu ul li:hover{
+    background-color: gray;
+    transition: 0.5s;
+}
+.medio{
+    background-color:black  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    padding: 15px;
+
+}
+
+.medio article{
+    
+    background-image: url(img/fond.jpg);
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    
+    display: grid;
+
+}
+.medio article p{
+    color:black;
+    line-height: 1.5;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    
+}
+.medio article h2{
+    padding-top: 7%;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.medio2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding:20px;
+     background-color: black;
+}
+.medio2 img{
+    height: auto;
+    width: 45%;
+    max-width: 500px;
+    margin-left: 30px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+.formulario{
+    width: 100%;
+    max-width: 420px;
+    margin: 20px 20px;
+    padding: 25px;
+    border-radius: 12px;
+    background-image: url(img/fondocab.jpg);
+   
+    box-sizing: border-box;
+    }
+    
+
+.formulario h2{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom:20px ;
+    color: white;
+   
+}
+
+.formulario .entrada{
+    border: 1px solid #aaa;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    display:flex;
+    background-color: white;
+    align-items: center;
+   
+}
+.formulario .entrada img{
+    height: 25px;
+    width: 25px;
+    padding-bottom: 0;
+    margin-right: 10px;
+    
+}
+form h2{
+    font-family: "font1";
+    font-size: 50px;
+}
+.formulario .entrada input{
+    background-color: white;
+    
+    width: 80%;
+    font-size: 14px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.formulario p{
+    text-align: center;
+    color: antiquewhite;
+    margin:12px 0;
+    font-size: 13px;
+    
+}
+
+.formulario p .login{
+    color:azure;
+    text-decoration: none;
+    font-weight: bold;
+    
+    
+}
+
+.formulario p .login:hover{
+    color: cadetblue;
+}
+
+.formulario p .grabar{
+    width: 100%;
+    font-size: 20px;
+    padding: 15px 0px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.formulario p .grabar:hover{
+    background-color: cadetblue;
+}
+footer{font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+clear: both;
+box-sizing: border-box;}
+footer .iconos {
+    display:flex;
+    align-items: center;
+    gap:12px
+}
+footer .iconos a img{
+    width: 24px;
+    height: 24px;
+    cursor:pointer;
+    display: block;
+}
+.datosFooter p{
+    margin:0;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+@media screen and (max-width:550px){
+    header{
+        flex-direction:column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    h1{
+        margin:0;
+        padding: 10px;
+        font-size:1.5em;
+    }
+    .menu{
+        height: auto;
+    }
+    .menu ul{flex-direction:column;
+    height: auto;}
+    .menu ul li{
+        width: 100%;
+        box-sizing: border-box;
+        flex: none;
+        font-size: 1.1em;
+    }
+    .medio{
+        flex-direction: column;
+        gap:15px;
+        padding: 10px;
+    }
+    .medio article{
+        width: 100%;
+        box-sizing: border-box;
+        
+    }
+    .medio article p{
+        padding: 10px;
+        overflow-wrap: break-word
+    }
+    .medio iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .slides{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .slides img{
+        width: 100%;
+        height: auto;
+    }
+
+    .medio2{
+        flex-direction: column;
+        gap:20px;
+        padding: 10px;
+    }
+    .medio2 img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+    .formulario{
+          width: 100%;
+        max-width: 420px;
+        margin: 10px 0;
+        padding: 15px;
+    }
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    footer .iconos {
+        order: -1;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .datosFooter {
+        text-align: center;
+    }
+
+
+}
