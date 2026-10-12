@@ -1,0 +1,435 @@
+:root {
+    --fondo-main: #f4f5f7;       
+    --fondo-card: #ffffff;        
+    --color-texto: #1a1a1a;     
+    --text2: #555555;
+    --hover: #922b21;
+}
+
+
+body.dark-mode {
+    --fondo-main: #121214;       
+    --fondo-card: #1e1e24;        
+    --color-texto: #f0f0f0;    
+    --text2: #aaa;}
+
+*{box-sizing: border-box;
+    padding:0;
+    margin:0;}
+
+body{
+    background-color: var(--fondo-main);
+    color:var(--color-texto)
+}
+header{
+    display: flex;
+    height: 170px;
+    min-width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+header img{
+    width: 30%;
+    height: 80%;
+    object-fit: cover;
+    margin-left: 40px;
+    border-radius: 30px;
+    
+    
+}
+header nav{
+    height: 150px;
+    width: 50%;
+    ;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    gap: 10px
+    
+
+}
+
+header nav ul li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding:0;
+    color:floralwhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    text-transform: uppercase;
+    transition: background-color 0.3 ease, color 0.3s; 
+}
+header nav ul li a{
+    text-decoration: none;
+    color: red
+}
+
+header nav ul li:hover{
+        background-color: var(--hover);
+        color: #ffffff
+}
+
+main{
+    width: min(1200px, 92%);margin-inline:auto;
+    display: flex;
+    flex-direction: column;
+
+}
+/*Slides*/
+
+/* .slides {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    background-color:#fff;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.slides img{
+    flex: 1;
+}
+
+a.slidesjs-previous, a.slidesjs-next, a.slidesjs-stop, a.slidesjs-play {
+    background-repeat: no-repeat;
+    
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    text-indent: -9999px; 
+    float: left;
+}
+
+
+.slidesjs-pagination {
+    float: right;
+    list-style-type: none;
+    margin:  0;
+    padding: 1;
+}
+
+.slidesjs-pagination li {
+    float: left;
+    margin-left: 5px;
+}
+
+.slidesjs-pagination li a {
+    display: block;
+    
+    overflow:hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    list-style-type: none;
+    text-indent: -9999px;
+} */
+/* animation: 0 slide infinite linear; */
+
+.container{
+    /* display: flex;
+    justify-content: center; */
+    align-items: center;  
+    width: 100%;
+    height: 700px;
+    margin-top: 40px;
+    margin-top: 20px;
+
+}
+
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin : auto;
+    overflow: hidden;
+    background-color: #ffffff;
+
+    position:relative;
+    
+}
+ .slide ul{
+    
+   display: flex;
+    padding:0px;
+    margin:0;
+    height: 100%;
+    width: 1000%;} 
+    
+ .slide ul li img{
+        
+        
+    animation: slide 35s infinite alternate ease-in-out ;
+    list-style: none;
+}  
+.slide ul li{
+    width: 100%;
+    height: 100%;
+    flex-shrink:0;
+}
+
+.slide ul li img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display:block;
+} 
+@keyframes slide{
+
+ 7.5%, 17.5% {margin-left: -100%;}
+    20%, 27% {margin-left: -200%;}
+    28%, 39.5% {margin-left: -300%;}
+    40%, 47.5% {margin-left: -400%;}
+    50.5%, 58.5% {margin-left: -500%;}
+    61%, 70% {margin-left: -600%;}
+    73.5%, 81.5% {margin-left: -700%;}
+    82.5%, 87.5% {margin-left: -800%;}
+     89.5%, 93.5% {margin-left: -900%;}
+    100% {margin-left: 0;}} 
+
+.h2{
+    background-color: var(--fondo-card);
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-texto);
+    
+    align-items: center;
+}
+
+.padre{
+    box-sizing: border-box;
+    padding: 0 10px;
+    width:95%;
+    height: 450px;
+    margin: 30px ;
+    justify-content: center;
+    align-items: center;
+}
+.grip{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    height: 100%;
+    margin-bottom: 20px;
+     justify-content: space-between;
+    align-items: center;
+}
+
+.grip .card{
+    box-sizing: border-box;
+    height: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    background-color: var(--fondo-card);
+    overflow:hidden;
+    
+    
+}
+.card img{
+    border-radius: 15px;
+    width: 100%;
+    height: 70%;
+    display:block;
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin-top: 39px;
+    align-items: center;
+    transition: all 0.3 ease;
+
+}
+.card img:hover{
+    transform: scale(1.1);
+    
+}
+
+.card h3{
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.h{
+   background-color: var(--fondo-card);
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-texto);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+    
+.maestro{
+    display: flex;
+    flex-direction: column;
+    max-width: 100% ;
+    box-sizing: border-box;
+    gap:30px; 
+    background-color: #922b21;
+    margin-bottom: 30px;
+
+}
+.noticia{
+    display: flex;
+    background-color: var(--fondo-card);
+    
+
+}
+.noticia img{
+    align-items: center;
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+}
+.noticia .texto{
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 30px;
+    color: var(--text2)
+}
+
+.texto h2{
+    color:--color-texto;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: #1e1e24;
+}
+
+.formulario{
+    background-color: var(--fondo-card);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 30px 80px 30px 80px;
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+    
+    
+}
+.formulario h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    text-align: center;
+    margin:15px;
+    color: var(--color-texto);
+    padding-top: 15px;
+}
+
+.campo{
+    box-sizing: border-box;
+    margin-left: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    height: 70px;
+   
+    
+}
+
+.campo input{
+    padding: 8px;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+
+.icono img{
+    width: 30px;
+    text-align: center;
+}
+
+.ocultar{
+    position:absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+
+}
+
+
+    
+    
+    
+
+.campo button{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--color-texto);
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #a93226;
+    transition: all 0.5 ease;
+}
+
+.campo button:hover{
+    background-color: var(--hover);
+}
+
+footer{
+    background-color:black;
+    display: grid;
+}
+.final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px
+    
+}
+.final img{
+    height: 30px;
+    width: 30px;
+}
+
+footer h3{
+    color:var(--text2);
+    text-align: center;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+   
+    
+
+    
+ 
